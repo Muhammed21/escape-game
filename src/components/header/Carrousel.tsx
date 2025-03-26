@@ -39,7 +39,7 @@ export const Carrousel = () => {
           objectPosition="center"
           className="pointer-events-none absolute opacity-50"
         />
-        <div className="flex flex-col items-start justify-center gap-2.5 absolute bottom-30 left-30">
+        <div className="flex flex-col items-start justify-center gap-2.5 absolute bottom-30 left-8 md:left-30">
           <Typography balise="h1" color="white">
             {currentData.title}
           </Typography>

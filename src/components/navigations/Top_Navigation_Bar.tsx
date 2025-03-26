@@ -13,7 +13,7 @@ export const Top_Navigation_Bar = () => {
         <div className="bg-gray-500 max-w-36 w-full h-8"></div>
       </div>
       {/* MENU LINK PART */}
-      <div className="flex gap-3 w-full items-center justify-center">
+      <div className="hidden md:flex gap-3 w-full items-center justify-center">
         {menu_data.map((link, index) => (
           <Typography key={index} balise="a" mirror="h4" href={link.link}>
             {link.nom}
@@ -22,7 +22,7 @@ export const Top_Navigation_Bar = () => {
       </div>
       {/* CTA PART */}
       <div className="flex w-full gap-3 items-center justify-end">
-        <CTA variant="primary" rounded="full">
+        <CTA variant="primary" rounded="full" href="/routes/reservation">
           Réserver
         </CTA>
         <CTA variant="primary" rounded="full">

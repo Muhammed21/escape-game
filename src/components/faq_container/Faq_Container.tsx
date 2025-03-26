@@ -14,9 +14,9 @@ export const Faq_Container = () => {
           Save your buddy
         </Typography>
         <Typography balise="h3" color="white" className="w-full">
-          Save your Buddy" est un escape game immersif au cœur des fonds marins,
+          Save your Buddy est un escape game immersif au cœur des fonds marins,
           entre bancs de poissons, épaves mystérieuses et récifs colorés... mais
-          l'air se fait rare et le temps s'écoule plus vite que prévu !
+          l&apos;air se fait rare et le temps s&apos;écoule plus vite que prévu !
         </Typography>
       </div>
       <CTA variant="tertiary" rounded="basic">

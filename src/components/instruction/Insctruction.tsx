@@ -32,6 +32,14 @@ export const Instruction = () => {
               alt={item.nom}
               width={item.size || 50}
               height={item.size || 50}
+              className="hidden md:block"
+            />
+            <Image
+              src={item.icon}
+              alt={item.nom}
+              width={(item.size) / 2 || 50}
+              height={(item.size) / 2 || 50}
+              className="block md:hidden"
             />
             <Typography balise="h4" color="white">
               {item.nom}
