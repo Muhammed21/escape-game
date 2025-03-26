@@ -1,6 +1,6 @@
 import React from "react";
 import { gsap } from "gsap";
-import "./flowing_menu.css";
+import styles from './flowing_menu.module.css';
 
 interface MenuItemProps {
   link: string;
@@ -14,8 +14,8 @@ interface FlowingMenuProps {
 
 const FlowingMenu: React.FC<FlowingMenuProps> = ({ items = [] }) => {
   return (
-    <div className="menu-wrap">
-      <nav className="menu">
+    <div className={styles['menu-wrap']}>
+      <nav className={styles.menu}>
         {items.map((item, idx) => (
           <MenuItem key={idx} {...item} />
         ))}
@@ -85,7 +85,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
       <React.Fragment key={idx}>
         <span>{text}</span>
         <div
-          className="marquee__img"
+          className={styles['marquee__img']}
           style={{ backgroundImage: `url(${image})` }}
         />
       </React.Fragment>
@@ -93,18 +93,18 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
   }, [text, image]);
 
   return (
-    <div className="menu__item" ref={itemRef}>
+    <div className={styles["menu__item"]} ref={itemRef}>
       <a
-        className="menu__item-link"
+        className={styles["menu__item-link"]}
         href={link}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         {text}
       </a>
-      <div className="marquee" ref={marqueeRef}>
-        <div className="marquee__inner-wrap" ref={marqueeInnerRef}>
-          <div className="marquee__inner" aria-hidden="true">
+      <div className={styles["marquee"]} ref={marqueeRef}>
+        <div className={styles["marquee__inner-wrap"]} ref={marqueeInnerRef}>
+          <div className={styles["marquee__inner"]} aria-hidden="true">
             {repeatedMarqueeContent}
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { Container } from "@/components/container/Container"
 import { demoItems } from "@/utils/flowing_menu_data/Flowing_Menu_Data"
+import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 
 export default function ItemPage() {
@@ -21,7 +22,7 @@ export default function ItemPage() {
   return (
     <Container py={120} className="h-full text-white">
       <h1>{item.text}</h1>
-      <img src={item.image} alt={item.text} />
+      <Image src={item.image} alt={item.text} width={1920} height={1080}/>
       <p>Link: {item.link}</p>
       <p>playTime: {item.playTime}</p>
       <p>numberPlayers: {item.numberPlayers}</p>
