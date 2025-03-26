@@ -13,8 +13,6 @@ export default function ItemPage() {
     const id = searchParams.get("id");
 
     const item = demoItems.find(item => item.id === parseInt(id as string))
-    console.log(id)
-    console.log(item)
 
     if (!item) {
         return (
@@ -27,7 +25,7 @@ export default function ItemPage() {
     return (
         <>
             <Container py={60} className="h-full text-white">
-                <Typography balise="h1" color="white">{item.text}</Typography>
+                <Typography balise="h1" color="white" fontFamily="Serpent">{item.text}</Typography>
             </Container>
             <div className="relative h-[500px]">
                 <Image src={item.image} alt={item.text} fill className="absolute object-cover" />
@@ -37,14 +35,15 @@ export default function ItemPage() {
             <div className="relative w-full h-max">
             <Image src="/img/png/boat-and-submarine.png" alt="boat and submarine" width={550} height={2000} className="absolute hidden lg:block top-[40px] z-0 right-[10px] object-contain" />
             <Container className="h-full hidden lg:block text-white pb-86">
-                <Typography balise="h3" color="white">Équipe du bateau</Typography>
+                <Typography balise="h2" color="white">Équipe du bateau</Typography>
             </Container>
             <Container py={60} className="h-full block lg:hidden text-white">
                 <Typography balise="h3" color="white">Équipe du bateau</Typography>
             </Container>
             <DescTeam desc={item.boatTeam} align="left"/>
             <Container py={60} className="h-full text-white">
-                <Typography balise="h3" color="white">Équipe de la navette</Typography>
+                <Typography balise="h2" color="white" className="hidden lg:block text-center">Équipe de la navette</Typography>
+                <Typography balise="h3" color="white" className="block lg:hidden">Équipe de la navette</Typography>
             </Container>
             <DescTeam desc={item.navetteTeam} align="right"/>
             </div>

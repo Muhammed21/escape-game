@@ -1,14 +1,14 @@
 export const Menu_Link = [
   {
     nom: "Accueil",
-    link: "/acceuil",
+    link: "/",
   },
   {
     nom: "La salle",
-    link: "/la_salle",
+    link: "/routes/saveyourbuddy?id=1",
   },
   {
     nom: "L'événement",
-    link: "/evenement",
+    link: "/routes/evenement",
   },
 ];

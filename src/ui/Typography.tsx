@@ -4,7 +4,7 @@ interface TypographyProps {
   balise: "h1" | "h2" | "h3" | "h4" | "a";
   mirror?: "h1" | "h2" | "h3" | "h4" | "a";
   color?: "white" | "black";
-  fontFamily?: "Aston";
+  fontFamily?: "Aston" | "Serpent";
   href?: string;
   className?: string;
   children: React.ReactNode;
@@ -55,6 +55,9 @@ export const Typography = ({
   switch (fontFamily) {
     case "Aston":
       fontFamilyStyle = "font-aston";
+      break;
+    case "Serpent":
+      fontFamilyStyle = "font-serpent";
       break;
   }
 

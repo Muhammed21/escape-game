@@ -2,7 +2,7 @@ export const demoItems = [
   {
     id: 1,
     link: "/routes/saveyourbuddy?id=1",
-    text: "Sous pression",
+    text: "sous pression",
     image: "https://picsum.photos/600/400?random=1",
     playTime: "30 min",
     playIcon: "/icon/boussole.svg",
