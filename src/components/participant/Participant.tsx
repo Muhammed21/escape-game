@@ -12,6 +12,8 @@ type ParticipantProps = {
 
 export const Participant = () => {
   const [participants] = useState<ParticipantProps[]>(Participant_Data);
+
+
   return (
     <Container className="relative w-full h-max flex items-center justify-between">
       <Image

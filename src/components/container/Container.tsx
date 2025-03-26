@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 interface ContainerProps {
   children: React.ReactNode;
-  py?: 120 | 10;
+  py?: 120 | 60 | 10;
   className?: string;
 }
 
@@ -12,6 +12,9 @@ export const Container = ({ children, py, className }: ContainerProps) => {
   switch (py) {
     case 120:
       pyStyle = "py-[120px]"
+      break;
+    case 60:
+      pyStyle = "py-[60px]"
       break;
     case 10:
       pyStyle = "py-2.5"
