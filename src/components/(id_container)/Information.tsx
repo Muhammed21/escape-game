@@ -2,7 +2,14 @@ import Image from "next/image"
 import { Container } from "../container/Container"
 
 interface InfoProps {
-    item: any
+    item: {
+        playIcon: string,
+        personneIcon: string,
+        difficultyIcon: string,
+        playTime: string,
+        numberPlayers: string,
+        difficulty: string
+    }
 }
 
 export const Information = ({item}:InfoProps) => {

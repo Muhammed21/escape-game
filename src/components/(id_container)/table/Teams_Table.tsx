@@ -2,27 +2,25 @@ import { Container } from "@/components/container/Container";
 import { useEffect, useState } from "react";
 
 type TeamProps = {
-    game_time?: string;
-    mindgames?: {
-        mindgame_status?: string
-    }[];
+    FinalTime?: string;
+    game_status?: string;
     teams: {
         team_name?: string;
-    }
+    }[]
 }
 
 export const Teams_Table = () => {
     const [teams, setTeams] = useState<TeamProps[]>([])
 
     const fetchTeams = async () => {
-        const res = await fetch(`http://192.168.4.60/workshopAPI/api/v1/index.php?teams`)
+        const res = await fetch(`http://192.168.4.60/workshopAPI/api/v1/index.php?games`)
         const json = await res.json()
         setTeams(json)
-        console.log(teams)
+        console.log(json)
     }
 
     useEffect(() => {
-        // fetchTeams()
+        fetchTeams()
     }, [])
 
     return (
@@ -32,51 +30,45 @@ export const Teams_Table = () => {
                     <tr>
                         <th className="p-3 bg-[#1F6DBD] rounded-tl-md">
                             <p className="block text-sm antialiased font-normal leading-none text-white">
-                                Name
+                                Team Name
                             </p>
                         </th>
                         <th className="p-3 bg-[#1F6DBD]">
                             <p className="block text-sm antialiased font-normal leading-none text-white">
-                                Job
+                                Game Time
                             </p>
                         </th>
                         <th className="p-3 bg-[#1F6DBD] rounded-tr-md">
                             <p className="block text-sm antialiased font-normal leading-none text-white">
-                                Employed
+                                Status
                             </p>
                         </th>
                     </tr>
                 </thead>
-                {/* <tbody>
-                {teams.map((team, index) => (
-                    <tr key={index}>
-                        <td>{team.teams?.team_name}</td>    
-                        <td>{team.game_time}</td>
-                        <td>{team.mindgames?.map((mindgame, index) => (
-                            <span key={index}>{mindgame.mindgame_status}</span>
-                        ))}
-                        </td>
-                    </tr>      
-                ))}
-            </tbody> */}
                 <tbody>
-                    <tr>
-                        <td className="p-4 border-r-2 border-b-26 border-[#1F6DBD] rounded-bl-md">
-                            <p className="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                                John Michael
-                            </p>
-                        </td>
-                        <td className="p-4 border-r-2 border-b-26 border-[#1F6DBD]">
-                            <p className="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                                John Michael
-                            </p>
-                        </td>
-                        <td className="p-4 border-b-26 border-[#1F6DBD] rounded-br-md">
-                            <p className="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
-                                John Michael
-                            </p>
-                        </td>
-                    </tr>
+                    {teams.map((team, index) => (
+                        <tr key={index}>
+                            <td className="p-4 border-r-2 border-b-2 border-[#1F6DBD]">
+                                <p className="block font-sans text-sm antialiased font-normal leading-normal text-white">
+                                    {team.teams?.map((data, idx) => (
+                                        <span key={idx} className="mr-2">
+                                            {data.team_name}
+                                        </span>
+                                    ))}
+                                </p>
+                            </td>
+                            <td className="p-4 border-r-2 border-b-2 border-[#1F6DBD]">
+                                <p className="block font-sans text-sm antialiased font-normal leading-normal text-white">
+                                    {team.FinalTime !==undefined && team.FinalTime!==null ? team.FinalTime : 'En cours...'}
+                                </p>
+                            </td>
+                            <td className="p-4 border-b-2 border-[#1F6DBD]">
+                                <p className="block font-sans text-sm antialiased font-normal leading-normal text-white">
+                                    {team.game_status}
+                                </p>
+                            </td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </Container>
