@@ -21,7 +21,7 @@ export const Instruction = () => {
       <Typography balise="h2" color="white">
         Comment ça fonctionne ?
       </Typography>
-      <div className="flex w-full gap-[var(--margin-x)] items-center justify-between">
+      <div className="flex flex-col sm:flex-row w-full gap-[var(--margin-x)] items-center justify-between">
         {instruction.map((item, index) => (
           <div
             key={index}
@@ -37,8 +37,8 @@ export const Instruction = () => {
             <Image
               src={item.icon}
               alt={item.nom}
-              width={(item.size) / 2 || 50}
-              height={(item.size) / 2 || 50}
+              width={item.size / 2 || 50}
+              height={item.size / 2 || 50}
               className="block md:hidden"
             />
             <Typography balise="h4" color="white">

@@ -49,7 +49,7 @@ export const Carrousel = () => {
         </div>
       </motion.div>
 
-      <div className="absolute top-2/4 z-50 right-4 flex flex-col gap-3.5 items-end justify-center w-max h-max">
+      <div className="absolute top-2/4 z-30 right-4 flex flex-col gap-3.5 items-end justify-center w-max h-max">
         {carrouselData.map((data, index) => (
           <div
             key={index}

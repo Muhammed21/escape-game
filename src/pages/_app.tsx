@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Top_Navigation_Bar />
       <Component {...pageProps} />
-      <Footer/>
+      <Footer />
     </>
   );
 }
