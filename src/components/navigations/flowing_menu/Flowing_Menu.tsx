@@ -1,6 +1,7 @@
 import React from "react";
 import { gsap } from "gsap";
-import styles from './flowing_menu.module.css';
+import styles from "./flowing_menu.module.css";
+import Image from "next/image";
 
 interface MenuItemProps {
   link: string;
@@ -14,7 +15,7 @@ interface FlowingMenuProps {
 
 const FlowingMenu: React.FC<FlowingMenuProps> = ({ items = [] }) => {
   return (
-    <div className={styles['menu-wrap']}>
+    <div className={styles["menu-wrap"]}>
       <nav className={styles.menu}>
         {items.map((item, idx) => (
           <MenuItem key={idx} {...item} />
@@ -84,9 +85,12 @@ const MenuItem: React.FC<MenuItemProps> = ({ link, text, image }) => {
     return Array.from({ length: 4 }).map((_, idx) => (
       <React.Fragment key={idx}>
         <span>{text}</span>
-        <div
-          className={styles['marquee__img']}
-          style={{ backgroundImage: `url(${image})` }}
+        <Image
+          src={image}
+          alt="image"
+          width={50}
+          height={50}
+          className={styles["marquee__img"]}
         />
       </React.Fragment>
     ));

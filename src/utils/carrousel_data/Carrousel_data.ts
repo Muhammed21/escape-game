@@ -2,7 +2,7 @@ export const Carrousel_Data = [
   {
     title: "Image 1",
     description: "Description Image 1",
-    img: "/img/png/img1.svg",
+    img: "/img/png/img1.jpg",
   },
   {
     title: "Image 2",

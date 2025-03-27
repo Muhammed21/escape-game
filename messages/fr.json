@@ -1,0 +1,148 @@
+{
+  "header": {
+    "topbar": {
+      "CTA": "Réserver",
+      "menu": {
+        "1": {
+          "nom": "Accueil",
+          "link": "/"
+        },
+        "2": {
+          "nom": "La salle",
+          "link": "/routes/saveyourbuddy?id=1"
+        },
+        "3": {
+          "nom": "L'événement",
+          "link": "/routes/evenement"
+        }
+      }
+    },
+    "carousel": [
+      {
+        "title": "Image fr 1",
+        "description": "Description Image 1",
+        "img": "/img/png/img1.svg"
+      },
+      {
+        "title": "Image 2",
+        "description": "Description Image 2",
+        "img": "/img/png/img2.png"
+      },
+      {
+        "title": "Image 3",
+        "description": "Description Image 3",
+        "img": "/img/png/img3.png"
+      }
+    ]
+  },
+  "boat": {
+    "title": "Sous pression"
+  },
+  "instrcutions": {
+    "title": "Comment ça fonctionne ?",
+    "steps": {
+      "1": {
+        "nom": "30 minutes de jeux",
+        "icon": "/icon/boussole.svg"
+      },
+      "2": {
+        "nom": "3 à 4 joueurs",
+        "icon": "/icon/personne.svg"
+      },
+      "3": {
+        "nom": "Plongez",
+        "icon": "/icon/bulle.svg"
+      }
+    }
+  },
+  "participant": {
+    "title": "Qui peut plonger ?",
+    "1": {
+      "nom": "Élève",
+      "icon": "/icon/student.svg"
+    },
+    "2": {
+      "nom": "Amis & Famille",
+      "icon": "/icon/family.svg"
+    },
+    "3": {
+      "nom": "Collègue & Co-Workers",
+      "icon": "/icon/college.svg"
+    },
+    "4": {
+      "nom": "Passant",
+      "icon": "/icon/passing.svg"
+    }
+  },
+  "faq": {
+    "title": "Save your buddy",
+    "description": " Save your Buddy est un escape game immersif au cœur des fonds marins, entre bancs de poissons, épaves mystérieuses et récifs colorés... mais l'air se fait rare et le temps s';écoule plus vite que prévu !",
+    "questions": {
+      "1": {
+        "question": "Qu'est ce qu'un escape game ?",
+        "answer": "Un escape game est un jeu d’aventure immersif où les participants sont enfermés dans une pièce ou un espace thématique. Ils doivent résoudre des énigmes, trouver des indices et accomplir des missions pour s'échapper ou atteindre un objectif dans un temps limité. C'est un mélange de réflexion, de travail d'équipe et d'exploration."
+      },
+      "2": {
+        "question": "Serai-je enfermé dans une pièce ?",
+        "answer": "Oui, mais pas de panique, si vous avez peur, nous pouvons vous ouvrir ou encore laisser ouvert !"
+      },
+      "3": {
+        "question": "Combien de temps dure le jeu ?",
+        "answer": "Chaque escape game dure 30 minutes, mais nous avons un concept un peu particulier car nous laissons l'ensemble de nos clients finir les salles (dans la mesure du possible)."
+      },
+      "4": {
+        "question": "Puis-je jouer plusieurs salles ?",
+        "answer": "Pour cette évènement, nous avons préparer seulement une seule salle dans un certains thème avec des épreuves en lien avec."
+      },
+      "5": {
+        "question": "D'autres personnes seront-elles dans la pièce avec nous ?",
+        "answer": "Non, seulement votre équipe se trouveront dans la salle, mais vous seriez aidé d’un gamemaster (maître de jeu) qui vous accompagnera le temps de votre jeu."
+      },
+      "6": {
+        "question": "Dois-je apporter quelque chose ?",
+        "answer": "Non, aucun objet n’est demandé. Tous vous sera fournie lors de votre expérience."
+      },
+      "7": {
+        "question": "Est-ce qu'il y a une limite d'âge?",
+        "answer": "Oui, nous acceptons des personnes de 6 à 70 ans, pour des mesures de sécurité et de connaissance."
+      }
+    }
+  },
+  "event": {
+    "title": "L'événement",
+    "description": "La surpêche et la destruction des écosystèmes marins",
+    "discussion": {
+      "1": {
+        "desc": "La surpêche se produit lorsque les poissons et autres organismes marins sont capturés à un rythme plus rapide que leur capacité à se reproduire. Aujourd’hui, 34% des stocks mondiaux de poissons sont surexploités, et environ 60% sont exploités à leur maximum. Certaines espèces comme le thon rouge, le cabillaud ou certaines raies sont en danger critique. Mais la surpêche ne menace pas seulement certaines espèces : elle détruit des écosystèmes entiers, bouleversant la chaîne alimentaire et fragilisant la biodiversité marine.",
+        "align": "left"
+      },
+      "2": {
+        "desc": "Pour lutter contre la surpêche et protéger les écosystèmes marins, il est essentiel de favoriser la pêche durable en choisissant du poisson labellisé MSC ou ASC, et en consommant des espèces moins menacées, comme le maquereau plutôt que le thon rouge. La création et le respect des zones marines protégées permettent aux populations de poissons de se reconstituer naturellement. Il est également crucial d’encadrer les techniques de pêche en interdisant le chalutage profond et les filets dérivants, tout en limitant les quotas pour éviter une exploitation excessive. Enfin, soutenir la pêche artisanale et locale en privilégiant les circuits courts et les techniques respectueuses de l’environnement contribue à une gestion plus équilibrée des ressources marines.",
+        "align": "right"
+      }
+    },
+    "footerTitle": "Pourquoi c’est important ?",
+    "footerDesc": " Si rien n’est fait, nos océans pourraient être vidés de leurs poissons d’ici 2050. Mais si nous agissons maintenant, nous pouvons préserver la biodiversité marine et assurer une pêche durable pour les générations futures."
+  },
+  "saveyourbuddy": {
+    "items": {
+      "1": {
+        "id": 1,
+        "link": "https://bit.ly/SaveYourBuddy",
+        "text": "sous pression",
+        "image": "/img/png/saveyourbuddy.png",
+        "playTime": "30 min",
+        "playIcon": "/icon/boussole.svg",
+        "numberPlayers": "3 à 4 joueurs",
+        "personneIcon": "/icon/personne.svg",
+        "difficulty": "moyenne",
+        "difficultyIcon": "/icon/ancre.svg",
+        "description": "Lors d’une mission de routine, tout bascule. L’un de vos compagnons est isolé dans une capsule sous-marine, piégé à 6 000 mètres de profondeur, tandis que le reste de l’équipe se trouve dans la cabine du bateau d’expédition, en surface. Soudain, une alarme stridente déchire le silence. Les lumières vacillent, les écrans s’éteignent… le réseau électrique vient de sauter. Plus de communication. Plus de contrôle. Plus aucune certitude sur l’oxygène restant dans la capsule. Le temps presse. Une anomalie inconnue perturbe les instruments, et des signaux étranges émergent des profondeurs abyssales. Est-ce une panne… ou quelque chose d’autre ?Une seule chose est sûre : vous devez rétablir la connexion avant qu’il ne soit trop tard.",
+        "boatTeamName": "Équipe du bateau",
+        "boatTeam": "Votre équipe se trouve à bord du bateau d'expédition, en pleine mer, tandis que l’un de vos coéquipiers est coincé à bord d’une navette sous-marine, à plusieurs centaines de mètres de profondeur. L’atmosphère est tendue, et le temps joue contre vous. Votre mission : aider votre collègue à s’échapper en décryptant les indices qu'il parvient à vous transmettre depuis la navette. Chaque message, chaque signal pourrait être crucial pour résoudre l’énigme et rétablir la communication. Mais à mesure que le temps passe, les messages deviennent de plus en plus énigmatiques, et l'angoisse monte. L’oxygène dans la capsule s'amenuise. Serez-vous assez rapides et ingénieux pour sauver votre coéquipier avant qu’il ne soit trop tard ?",
+        "navetteTeamName": "Équipe de la navette",
+        "navetteTeam": "Coincé dans la navette sous-marine, votre seul espoir repose sur vos coéquipiers à bord du bateau. Chaque objet trouvé à l’intérieur de la capsule semble crucial pour votre survie, mais les énigmes à résoudre pour les utiliser correctement sont de plus en plus complexes. À chaque découverte, un mince espoir renaît, mais le temps s'écoule inexorablement, et l'oxygène se fait rare. Vos coéquipiers doivent agir rapidement, déchiffrer les indices et vous guider à travers ces épreuves sous-marines. Parviendrez-vous à recomposer le puzzle et à regagner l’oxygène avant qu'il ne soit trop tard ?"
+      }
+    }
+  }
+}

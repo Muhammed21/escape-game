@@ -4,15 +4,18 @@ import { Container } from "../container/Container";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import { useState } from "react";
-import { Menu_Link } from "@/utils/menu_data/Menu_Link";
 import Image from "next/image";
 import clsx from "clsx";
 import { useRouter } from "next/router";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "../languageSwitcher/Language_switcher";
 
 export const Top_Navigation_Bar = () => {
-  const [menu_data] = useState(Menu_Link);
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
+  const t = useTranslations("header.topbar");
+  const menu = ["menu.1", "menu.2", "menu.3"] as const;
+
   return (
     <Container className="flex border-b w-full h-max items-center justify-between">
       {/* LOGO PART */}
@@ -30,31 +33,35 @@ export const Top_Navigation_Bar = () => {
       </div>
       {/* MENU LINK PART */}
       <div className="hidden md:flex gap-3 w-full items-center justify-center">
-        {menu_data.map((link, index) => (
-          <Typography key={index} balise="a" mirror="h4" href={link.link}>
-            {link.nom}
+        {menu.map((link, index) => (
+          <Typography
+            key={index}
+            balise="a"
+            mirror="h4"
+            color="white"
+            href={t(`${link}.link`)}
+          >
+            {t(`${link}.nom`)}
           </Typography>
         ))}
       </div>
       {/* CTA PART */}
       <div className="flex w-full gap-3 items-center justify-end">
-        <CTA variant="primary" rounded="full" href="/routes/reservation">
-          Réserver
-        </CTA>
         <CTA
-          variant="primary"
+          variant="tertiary"
           rounded="full"
-          href="mailto:we.are.studio@gmail.com"
-          className="hidden md:block"
+          href="https://bit.ly/SaveYourBuddy"
         >
-          Contact
+          {t("CTA")}
         </CTA>
         <RxHamburgerMenu
           className="md:hidden cursor-pointer"
           size={30}
           onClick={() => setIsOpen(!isOpen)}
         />
-        <div className="hidden md:block bg-gray-500 max-w-8 w-full h-8"></div>
+        <div className="w-max h-max hidden md:flex">
+          <LanguageSwitcher />
+        </div>
       </div>
       <div
         className={clsx(
@@ -69,17 +76,18 @@ export const Top_Navigation_Bar = () => {
         />
         {/* MENU LINK PART */}
         <div className="gap-8 w-full h-screen grid place-content-center">
-          {menu_data.map((link, index) => (
+          {menu.map((link, index) => (
             <Typography
               key={index}
               balise="a"
               mirror="h2"
               color="white"
-              href={link.link}
+              href={t(`${link}.link`)}
             >
-              {link.nom}
+              {t(`${link}.nom`)}
             </Typography>
           ))}
+          <LanguageSwitcher />
         </div>
       </div>
     </Container>

@@ -1,0 +1,148 @@
+{
+  "header": {
+    "topbar": {
+      "CTA": "Reserve",
+      "menu": {
+        "1": {
+          "nom": "Home",
+          "link": "/"
+        },
+        "2": {
+          "nom": "The room",
+          "link": "/routes/saveyourbuddy?id=1"
+        },
+        "3": {
+          "nom": "The event",
+          "link": "/routes/evenement"
+        }
+      }
+    },
+    "carousel": [
+      {
+        "title": "Image en 1",
+        "description": "Description Image 1",
+        "img": "/img/png/img1.svg"
+      },
+      {
+        "title": "Image 2",
+        "description": "Description Image 2",
+        "img": "/img/png/img2.png"
+      },
+      {
+        "title": "Image 3",
+        "description": "Description Image 3",
+        "img": "/img/png/img3.png"
+      }
+    ]
+  },
+  "boat": {
+    "title": "Under pressure"
+  },
+  "instrcutions": {
+    "title": "How does it work ?",
+    "steps": {
+      "1": {
+        "nom": "30 minutes of play",
+        "icon": "/icon/boussole.svg"
+      },
+      "2": {
+        "nom": "3 to 4 players",
+        "icon": "/icon/personne.svg"
+      },
+      "3": {
+        "nom": "Dive in",
+        "icon": "/icon/bulle.svg"
+      }
+    }
+  },
+  "participant": {
+    "title": "Who can dive?",
+    "1": {
+      "nom": "Student",
+      "icon": "/icon/student.svg"
+    },
+    "2": {
+      "nom": "Friends & Family",
+      "icon": "/icon/student.svg"
+    },
+    "3": {
+      "nom": "Time mate & Co-Workers",
+      "icon": "/icon/student.svg"
+    },
+    "4": {
+      "nom": "Passing",
+      "icon": "/icon/student.svg"
+    }
+  },
+  "faq": {
+    "title": "Save your buddy",
+    "description": "Save your Buddy is an immersive escape game set in the heart of the ocean, surrounded by schools of fish, mysterious wrecks, and colorful reefs... but the air is running out, and time is passing faster than expected!",
+    "questions": {
+      "1": {
+        "question": "What is an escape game?",
+        "answer": "An escape game is an immersive adventure game where participants are locked in a room or a themed space. They must solve puzzles, find clues, and complete missions to escape or achieve a goal within a limited time. It's a mix of thinking, teamwork, and exploration."
+      },
+      "2": {
+        "question": "Will I be locked in a room?",
+        "answer": "Yes, but don't worry, if you feel uncomfortable, we can open the door or leave it open!"
+      },
+      "3": {
+        "question": "How long does the game last?",
+        "answer": "Each escape game lasts 30 minutes, but we have a special concept as we allow all our customers to finish the rooms (as long as possible)."
+      },
+      "4": {
+        "question": "Can I play multiple rooms?",
+        "answer": "For this event, we have prepared only one room with a specific theme and related challenges."
+      },
+      "5": {
+        "question": "Will there be other people in the room with us?",
+        "answer": "No, only your team will be in the room, but you will be assisted by a game master who will guide you throughout the game."
+      },
+      "6": {
+        "question": "Do I need to bring anything?",
+        "answer": "No, you don't need to bring anything. Everything will be provided during your experience."
+      },
+      "7": {
+        "question": "Is there an age limit?",
+        "answer": "Yes, we accept people from 6 to 70 years old for safety and knowledge reasons."
+      }
+    }
+  },
+  "event": {
+    "title": "The event",
+    "description": "Overfishing and the destruction of marine ecosystems",
+    "discussion": {
+      "1": {
+        "desc": "Overfishing occurs when fish and other marine organisms are captured at a faster rate than their ability to reproduce. Today, 34% of global fish stocks are overexploited, and about 60% are exploited to their maximum. Some species, such as bluefin tuna, cod, or certain rays, are critically endangered. But overfishing does not only threaten certain species: it destroys entire ecosystems, disrupting the food chain and weakening marine biodiversity.",
+        "align": "left"
+      },
+      "2": {
+        "desc": "To combat overfishing and protect marine ecosystems, it is essential to promote sustainable fishing by choosing MSC or ASC certified fish, and by consuming less threatened species, such as mackerel instead of bluefin tuna. The creation and respect of marine protected areas allow fish populations to naturally regenerate. It is also crucial to regulate fishing techniques by banning deep-sea trawling and drift nets, while limiting quotas to prevent overexploitation. Finally, supporting artisanal and local fishing by favoring short supply chains and environmentally friendly techniques contributes to a more balanced management of marine resources.",
+        "align": "right"
+      }
+    },
+    "footerTitle": "Why is it important?",
+    "footerDesc": "If nothing is done, our oceans could be emptied of fish by 2050. But if we act now, we can preserve marine biodiversity and ensure sustainable fishing for future generations."
+  },
+  "saveyourbuddy": {
+    "items": {
+      "1": {
+        "id": 1,
+        "link": "https://bit.ly/SaveYourBuddy",
+        "text": "under pressure",
+        "image": "/img/png/saveyourbuddy.png",
+        "playTime": "30 min",
+        "playIcon": "/icon/boussole.svg",
+        "numberPlayers": "3 to 4 players",
+        "personneIcon": "/icon/personne.svg",
+        "difficulty": "average",
+        "difficultyIcon": "/icon/ancre.svg",
+        "description": "During a routine mission, everything changes. One of your companions is isolated in an underwater capsule, trapped at a depth of 6,000 meters, while the rest of the team is in the cabin of the expedition ship, on the surface. Suddenly, a shrill alarm shatters the silence. Lights flicker, screens go blank... the power grid has just blown. No more communication. No control. No certainty of oxygen remaining in the capsule. Time is running out. An unknown anomaly disrupts the instruments, and strange signals emerge from the abyssal depths. One thing's for sure: you've got to restore the connection before it's too late.",
+        "boatTeamName": "Boat Team",
+        "boatTeam": "Your team is on board the expedition ship in the open sea, while one of your teammates is trapped aboard an underwater shuttle several hundred meters below the surface. The atmosphere is tense, and time is on your side. Your mission: help your colleague escape by deciphering the clues he manages to transmit to you from the shuttle. Every message, every signal could be crucial to solving the enigma and re-establishing communication. But as time passes, the messages become more and more enigmatic, and anxiety mounts. The oxygen in the capsule is running out. Will you be quick and resourceful enough to save your teammate before it's too late?",
+        "navetteTeamName": "Shuttle Team",
+        "navetteTeam": "Stuck in the underwater shuttle, your only hope lies with your teammates aboard the ship. Every object found inside the capsule seems crucial to your survival, but the puzzles you have to solve to use them properly are increasingly complex. With each discovery, a faint hope is reborn, but time is running out inexorably, and oxygen is becoming scarce. Your teammates must act quickly, deciphering clues and guiding you through these underwater trials. Can you put the puzzle back together and regain oxygen before it's too late?"
+      }
+    }
+  }
+}

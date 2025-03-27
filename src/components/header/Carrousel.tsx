@@ -4,7 +4,6 @@ import clsx from "clsx";
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Typography } from "@/ui/Typography";
 
 type CarrouselData = {
   title: string;
@@ -39,14 +38,14 @@ export const Carrousel = () => {
           objectPosition="center"
           className="pointer-events-none absolute opacity-50"
         />
-        <div className="flex flex-col items-start justify-center gap-2.5 absolute bottom-30 left-8 md:left-30">
+        {/* <div className="flex flex-col items-start justify-center gap-2.5 absolute bottom-30 left-8 md:left-30">
           <Typography balise="h1" color="white">
             {currentData.title}
           </Typography>
           <Typography balise="h2" color="white">
             {currentData.description}
           </Typography>
-        </div>
+        </div> */}
       </motion.div>
 
       <div className="absolute top-2/4 z-30 right-4 flex flex-col gap-3.5 items-end justify-center w-max h-max">

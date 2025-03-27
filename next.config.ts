@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
     ],
   },
   reactStrictMode: true,
+  i18n: {
+    locales: ["en", "fr"],
+    defaultLocale: "fr",
+  },
 };
 
 export default nextConfig;

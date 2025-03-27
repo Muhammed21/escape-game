@@ -1,17 +1,15 @@
 import { Typography } from "@/ui/Typography";
 import { Container } from "../container/Container";
-import { Instruction_Data } from "@/utils/instruction_data/Instruction_data";
-import { useState } from "react";
 import Image from "next/image";
-
-type InstructionProps = {
-  nom: string;
-  icon: string;
-  size: number;
-};
+import { useTranslations } from "next-intl";
 
 export const Instruction = () => {
-  const [instruction] = useState<InstructionProps[]>(Instruction_Data);
+  const t = useTranslations("instrcutions");
+  const steps = ["steps.1", "steps.2", "steps.3"] as const;
+
+  // const [instruction] = useState<InstructionProps[]>(
+  //   Array.isArray(steps) ? steps : []
+  // );
 
   return (
     <Container
@@ -19,30 +17,30 @@ export const Instruction = () => {
       className="flex w-full flex-col items-center justify-center gap-20"
     >
       <Typography balise="h2" color="white">
-        Comment ça fonctionne ?
+        {t("title")}
       </Typography>
-      <div className="flex flex-col sm:flex-row w-full gap-[var(--margin-x)] items-center justify-between">
-        {instruction.map((item, index) => (
+      <div className="flex flex-col sm:flex-row gap-16 w-full sm:gap-[var(--margin-x)] items-center justify-between">
+        {steps.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center gap-8"
+            className="flex flex-col items-center justify-center gap-4 sm:gap-8"
           >
             <Image
-              src={item.icon}
-              alt={item.nom}
-              width={item.size || 50}
-              height={item.size || 50}
+              src={t(`${item}.icon`)}
+              alt={t(`${item}.nom`)}
+              width={150}
+              height={150}
               className="hidden md:block"
             />
             <Image
-              src={item.icon}
-              alt={item.nom}
-              width={item.size / 2 || 50}
-              height={item.size / 2 || 50}
+              src={t(`${item}.icon`)}
+              alt={t(`${item}.nom`)}
+              width={150 / 2}
+              height={150 / 2}
               className="block md:hidden"
             />
             <Typography balise="h4" color="white">
-              {item.nom}
+              {t(`${item}.nom`)}
             </Typography>
           </div>
         ))}
