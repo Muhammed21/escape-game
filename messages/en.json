@@ -144,5 +144,8 @@
         "navetteTeam": "Stuck in the underwater shuttle, your only hope lies with your teammates aboard the ship. Every object found inside the capsule seems crucial to your survival, but the puzzles you have to solve to use them properly are increasingly complex. With each discovery, a faint hope is reborn, but time is running out inexorably, and oxygen is becoming scarce. Your teammates must act quickly, deciphering clues and guiding you through these underwater trials. Can you put the puzzle back together and regain oxygen before it's too late?"
       }
     }
+  },
+  "buttonFormGoogle": {
+    "children": "Take my place"
   }
 }

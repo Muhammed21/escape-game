@@ -144,5 +144,8 @@
         "navetteTeam": "Coincé dans la navette sous-marine, votre seul espoir repose sur vos coéquipiers à bord du bateau. Chaque objet trouvé à l’intérieur de la capsule semble crucial pour votre survie, mais les énigmes à résoudre pour les utiliser correctement sont de plus en plus complexes. À chaque découverte, un mince espoir renaît, mais le temps s'écoule inexorablement, et l'oxygène se fait rare. Vos coéquipiers doivent agir rapidement, déchiffrer les indices et vous guider à travers ces épreuves sous-marines. Parviendrez-vous à recomposer le puzzle et à regagner l’oxygène avant qu'il ne soit trop tard ?"
       }
     }
+  },
+  "buttonFormGoogle": {
+    "children": "Prendre ma place"
   }
 }

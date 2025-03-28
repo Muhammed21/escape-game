@@ -1,12 +1,14 @@
 import { Typography } from "@/ui/Typography";
 import { Container } from "../container/Container";
 import { CTA } from "@/ui/CTA";
+import { useTranslations } from "next-intl";
 
 interface FaqHeaderProps {
   t: (key: string) => string;
 }
 
 export const FaqHeader = ({ t }: FaqHeaderProps) => {
+  const tCTA = useTranslations("buttonFormGoogle");
   return (
     <Container
       py={60}
@@ -25,7 +27,7 @@ export const FaqHeader = ({ t }: FaqHeaderProps) => {
         rounded="basic"
         href="https://bit.ly/SaveYourBuddy"
       >
-        Prendre ma place
+        {tCTA("children")}
       </CTA>
     </Container>
   );
